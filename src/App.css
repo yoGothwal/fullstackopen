@@ -1,0 +1,19 @@
+.div {
+    display: flex;
+    background-color: aqua;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+.button{
+    flex-grow: 2; /* Allows the button to grow and take available space */
+    text-align: center; /* Centers the text within the button */
+}
+
+.counter {
+    font-style: italic;
+    flex-grow: 1; /* Allows the counter to grow and take available space */
+    text-align: center; /* Centers the text within the counter */
+}
