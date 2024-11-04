@@ -2,7 +2,7 @@ import Great, { Hello, Great2} from './Hello';
 import { useState } from 'react';
 import { Button } from './Button';
 import { Display } from './Display';
-import { History } from './History';
+import { History } from './History'
 // import './App.css'
 const App =  () =>{
   const [clickes, setClicks] = useState({
@@ -50,12 +50,12 @@ const hello = ()=>{
       </div>
       <div className="d-flex bg-white m-2 rounded p-2 align-items-center">
         <History allClicks={allClicks}></History>    
-        <Display text={total}></Display>
         {/* <button onClick={hello()}></button> */}
         
       </div>
       <br />
       <div className="d-flex bg-white m-2 rounded p-2 align-items-center">
+        <Display text={total}></Display>
         <button onClick={()=>setToValue(1000)}>1000</button>
         <button onClick={()=>setToValue(0)}>0</button>
         <button onClick={()=>setToValue(-1)}>-1</button>
